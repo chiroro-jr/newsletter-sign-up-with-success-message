@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .subscribe-form:has(.email-input:invalid) .error {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+@layer utilities {
+    .subscribe-grid {
+        grid-template-columns: 1fr auto;
+    }
+}

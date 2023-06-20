@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body class="font-roboto lg:bg-gray-3">
+
+
+  <main class="grid lg:place-content-center min-h-screen ">
+    <!-- Subscribe Content  -->
+    <section
+      class="subscribe | grid lg:subscribe-grid lg:rounded-3xl lg:p-6 max-w-[58.125rem] w-full mx-auto bg-white lg:shadow-2xl lg:shadow-black/30">
+      <!-- Hero Images -->
+      <div>
+        <!-- Mobile -->
+        <img src="./images/illustration-sign-up-mobile.svg" alt="" class="block w-full lg:hidden">
+        <!-- Desktop -->
+        <img src="./images/illustration-sign-up-desktop.svg" alt="" class="hidden w-full lg:block">
+      </div>
+      <!-- Hero Text -->
+      <div class="px-6 py-10 grid gap-9 lg:gap-7 lg:col-start-1 lg:row-start-1">
+        <h1 class="text-3xl text-gray-2 font-bold lg:text-[3.375rem] lg:tracking-tight lg:leading-[3rem]">Stay updated!
+        </h1>
+        <p class="text-gray-2 -mt-4">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="text-gray-2 -mt-2 flex flex-col gap-5 lg:-mt-6">
+          <li class="flex gap-4 items-start">
+            <img src="./images/icon-list.svg" alt="" class="mt-1">
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="flex gap-4 items-start">
+            <img src="./images/icon-list.svg" alt="" class="mt-1">
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="flex gap-4 items-start">
+            <img src="./images/icon-list.svg" alt="" class="mt-1">
+            <p>And much more!</p>
+          </li>
+        </ul>
+        <form class="subscribe-form | grid gap-6">
+          <div class="grid gap-2.5">
+            <div class="flex justify-between items-center">
+              <label for="email" class="text-[0.6875rem] font-bold text-gray-3 tracking-wide">Email address</label>
+              <span class="error | text-[0.6875rem] font-bold text-tomato tracking-wide invisible opacity-0">Valid email
+                required</span>
+            </div>
+            <input placeholder="email@company.com" type="email" name="email" id="email"
+              class="email-input | px-5 py-4 text-gray-2/80 placeholder:text-gray-1/60 border-2 border-gray-1/60 rounded-lg outline-none focus:border-gray-2/80 focus:invalid:border-tomato invalid:bg-tomato/20 invalid:text-tomato transition-all duration-200">
+          </div>
+          <div class="grid rounded-lg bg-gradient-to-tr from-pink to-tomato transition-all duration-200 ">
+            <button disabled type="submit"
+              class="subscribe-btn | text-[0.9375rem] font-bold text-center px-5 py-4 text-white bg-gray-3 rounded-lg hover:bg-trasparent hover:shadow-xl hover:shadow-tomato/40 transition-all duration-200 disabled:bg-gray-2 disabled:text-gray-1 disabled:hover:shadow-none disabled:cursor-not-allowed">Subscribe
+              to
+              monthly newsletter</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Success Content  -->
+    <section
+      class="success | bg-white max-w-[31.25rem] h-full mx-auto place-content-center pt-36 px-[1.375rem] pb-10 lg:p-16 lg:rounded-3xl hidden flex-col gap-8 lg:gap-10 lg:shadow-2xl lg:shadow-black/30">
+      <img src="./images/icon-success.svg" alt="" class="w-16 h-16">
+      <h1 class="text-gray-3 text-4xl lg:text-[3.375rem] lg:tracking-tight lg:leading-[3rem] font-bold">Thanks for
+        subscribing!</h1>
+      <p class="text-gray-2 -mt-3 lg:-mt-5">A confirmation email has been sent to <span
+          class="submitted-email | text-gray-3 font-bold">ash@loremcompany.com.</span>
+        Please open it and click the button inside to confirm your subscription.</p>
+      <div
+        class="mt-auto grid rounded-lg bg-gradient-to-tr from-pink to-tomato transition-all duration-200 hover:shadow-xl hover:shadow-tomato/40">
+        <button type="submit"
+          class="dismiss-btn | text-[0.9375rem] font-bold text-center px-[1.375rem] py-4 text-white bg-gray-3 rounded-lg hover:bg-trasparent transition-all duration-200">Dismiss
+          message</button>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="text-center text-xs p-1 text-white/70 bg-gray-2/60 lg:fixed bottom-0 w-full">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      class="text-white hover:underline hover:cursor-pointer">Frontend
+      Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/chiroro-jr"
+      class="text-white hover:underline hover:cursor-pointer">Nyasha D. Chiroro</a>.
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
