@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [https://www.frontendmentor.io/solutions/newsletter-signup-and-success-message-using-tailwindcss-vite-and-html-qRSGS5bZfy](https://www.frontendmentor.io/solutions/newsletter-signup-and-success-message-using-tailwindcss-vite-and-html-qRSGS5bZfy)
+-   Live Site URL: [https://newsletter-sign-up-ndc.netlify.app/](https://newsletter-sign-up-ndc.netlify.app/)
 
 ## My process
 
